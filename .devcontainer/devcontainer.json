@@ -22,8 +22,6 @@
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight"
 			],
-			"repositories": {
-				"JAVASCRIPT-SERIES":;
 			"settings": {
 				"editor.fontSize": 32,
 				"terminal.integrated.fontSize": 24,
