@@ -6,7 +6,7 @@
 // console.log(typeof(score));
 // console.log(typeof score);
 
-// let valueinnumber=Number(score);
+// let valueinnumber=Number(score);  // Type conversion to number 
 // console.log(typeof (valueinnumber));
 // console.log(valueinnumber);
 
