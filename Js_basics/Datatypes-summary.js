@@ -35,3 +35,27 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// **********************************************************************************************
+
+// stack(primitive)  heap(non-primitive)
+
+let myytname="rhythm mahale";
+
+let anothername=myytname;  // only a copy is passed
+anothername="chaiaurcode"; 
+
+console.log(myytname);  
+console.log(anothername);
+
+let userone={
+    email: "abc@gmail.com",
+    upi: 236624
+}
+
+let usertwo=userone;
+
+usertwo.email="abc@hotmail.com";  // the whole value will be changed 
+
+console.log(userone.email);
+console.log(usertwo.email);
