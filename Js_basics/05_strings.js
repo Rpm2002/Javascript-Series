@@ -28,5 +28,5 @@ const str2="  raju japani   ";
 // console.log(str2.trim());// removes extraspaces
 
 const url="http://rhythm.com/rhythm%20mahale";
-console.log(url.replace("%20",'-node Js_basics/05_strings.js'));
+console.log(url.replace("%20","-"));
 
