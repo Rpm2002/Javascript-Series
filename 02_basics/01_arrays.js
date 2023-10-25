@@ -17,10 +17,10 @@ const heroes=['shaktiman','batman'];
 
 // myarr.unshift(10);  // puts the values at the start of array
 // console.log(myarr);
-// myarr.shift();
+// myarr.shift(); // pehla element nikal lega
 // console.log(myarr);
 // console.log(myarr);
-// console.log(myarr.includes(19));
+// console.log(myarr.includes(19)); wo particular element hai k nai array mai - true or false
 // console.log(myarr.indexOf(7));
 
 // const newarr=myarr.join(); // converts arrays into string format
