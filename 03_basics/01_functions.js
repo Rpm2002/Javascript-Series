@@ -67,3 +67,13 @@ handleobject({
     username:'Sam',
     price:279
 })
+
+// const array=[1,2,3,4];
+
+function getarrayvalue(getarray)
+{
+    console.log(getarray[1]);
+}
+
+// console.log(array);
+console.log([1,2,34,4]);
