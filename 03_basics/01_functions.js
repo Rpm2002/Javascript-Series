@@ -24,3 +24,46 @@ function add(a,b)
 
 const add_result=add(30,5);
 // console.log("Result : ",add_result);
+
+function login(username='Sam')
+{
+    if(username===undefined)
+    {
+        console.log("Please enter a username");
+        return;
+    }
+    return `${username} just logged in`;
+}
+
+// console.log(login("Rhythm"));
+// console.log(login());
+
+// function calculatecartprice(...num1)
+// {
+//     return num1;
+// }
+
+function calculatecartprice(val1,val2,...num1)
+{
+    return num1;
+}
+
+// console.log(calculatecartprice(400,300,500));  // returns array => [400,300,500]
+// console.log(calculatecartprice(2,4,9,5));
+
+const user={
+    username:'Rhythm',
+    price:199
+}
+
+function handleobject(anyobject)
+{
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleobject(user);
+
+handleobject({
+    username:'Sam',
+    price:279
+})
