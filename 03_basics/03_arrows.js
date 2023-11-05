@@ -17,7 +17,7 @@ const user={
 // function chai()
 // {
 //     let username='Rhythm'
-//     console.log(this.username);     // undefined aayega kyuki functions me nhi sirf objects me chalta hai
+//     console.log(this.username);     // undefined aayega kyuki this functions me nhi sirf objects me chalta hai
 // }
 
 // chai();
@@ -44,5 +44,6 @@ const chai= ()=>{
 
 // const addTwo=(num1,num2)=>  num1+num2;
 // const addTwo=(num1,num2)=>  (num1+num2); // implicit return  () parenthesis me return likhne ki zarurat nhi
-const addTwo=(num1,num2)=>  ({username:'Rhythm'});
+const addTwo=(num1,num2)=>  ({username:'Rhythm'}); // object return karne k liye parenthesis mein 
+                                                   //  rap karna hi padega
 console.log(addTwo(1,2));
