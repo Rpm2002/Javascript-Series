@@ -30,3 +30,8 @@ const answer=shoppingCart.reduce( (acc,item)=> acc+item.price,0) // yaha pe item
 
 console.log(answer);
 
+// The .reduce() method iterates through an array and returns a single value.
+// It takes a callback function with two parameters (accumulator, currentValue) as arguments.
+// On each iteration, accumulator is the value returned by the last iteration, and the currentValue
+// is the current element. Optionally, a second argument can be passed which acts as
+// the initial value of the accumulator.
