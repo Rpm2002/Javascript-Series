@@ -7,11 +7,11 @@ const balance= new Number(200);
 // console.log(balance.toString().length);  // conversion to string and then finding length of string
 // console.log(balance.toFixed(2)); // fix the number of decimals 
 
-const othernumber=132.43;
-// console.log(othernumber.toPrecision(3));
+const othernumber=132.43; // 132.43 => 132 after below command is used
+// console.log(othernumber.toPrecision(3)); // The toPrecision() method formats a number to a specified length.
 
 const hundreds=10000000;
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN')); kitne comas aayenge wo batata hai => 1,00,000
 
 // ************************** MATHS ***************************
 
