@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai aur Javascript | DOM <title>
+    <title>DOM Manipulation</title>
 </head>
 <body style="background-color: #212121;color: #fff;">
     <ul class="language">
@@ -15,11 +15,39 @@
     function addLanguage(langName)
     {
         const li=document.createElement('li');
-        li.innerHTML=`${langName}`;
+        li.innerHTML=`${langName}`; // due to innerHTML, it have to traverse whole tree and nodes 
         document.querySelector('.language').appendChild(li)
     }
 
+    addLanguage('Python');
+    addLanguage('Typescript');
 
+    function addoptimisedLang(langName)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName)) // this is optimised because it wont't traverse whole tree
+        document.querySelector('.language').appendChild(li)
+    }
 
+    addoptimisedLang('Ruby on Rails')    
+
+    // ************   Edit *************
+
+    const secondlang=document.querySelector('li:nth-child(2)')
+    console.log(secondlang);
+    // secondlang.innerHTML='Golang'
+    const newli=document.createElement('li')
+    newli.textContent='Golang'
+    secondlang.replaceWith(newli)
+
+    //   Edit
+
+    const firstlang=document.querySelector('li:first-child')
+    firstlang.outerHTML="<li>Jquery</li>"
+
+    // remove
+
+    const lastlang=document.querySelector('li:last-child')
+    lastlang.remove()
 </script>
 </html>
