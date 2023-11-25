@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+
+<script>
+//     document.getElementById('japan').onclick=function(){
+//         alert('This is an image of Japan')
+//     }  Not an efficient way of doing and provides and less features
+
+// attachEvent()  => old methods 
+// Jquery
+
+    //    document.getElementById('owl').addEventListener('click',function(e){
+    //     // alert(`You clicked on an owl image`)
+    //         console.log(e);
+    //    },false) // by default false hi hota hai
+
+    //    types of event listeners
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // ******  Event Propogation ******   very nice article attached below
+    // https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/
+
+    
+    // document.getElementById('images').addEventListener('click',function(e){
+    //         console.log('Clicked inside the ul');
+    //    },false) // bubbling method
+    
+       
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //         console.log('Clicked on owl');
+    //         e.stopPropagation() // bubbling hoke upar k event pe nhi jayega
+    //    },false) // bubbling method
+
+    //    document.getElementById('images').addEventListener('click',function(e){
+    //         console.log('Clicked inside the ul');
+    //    },true) // capturing method
+    
+       
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //         console.log('Clicked on owl');
+    //    },true) // capturing method
+
+    //    document.getElementById('google').addEventListener('click',function(e){
+    //         e.preventDefault()
+    //         e.stopPropagation()
+    //         console.log('Clicked on Google link');
+    //    },false) 
+
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log(e.target.parentNode);
+    //     let removeIt=e.target.parentNode
+    //     removeIt.remove()
+    // },false)
+
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }  
+    })  
+
+// </script>
+</html>
