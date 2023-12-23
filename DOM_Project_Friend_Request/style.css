@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:cornflowerblue
+}
+
+#card{
+    height: 420px;
+    width: 320px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#card img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#card h1{
+    margin:6px 0;
+    font-size: 30px;
+}
+
+#card h5{
+    font-size: 30px;
+    margin: 20px;
+    color: red;
+}
+
+#card button{
+    background-color: cadetblue;
+    color: white;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
