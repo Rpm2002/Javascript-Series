@@ -52,3 +52,7 @@ body{
     border-radius: 50px;
     cursor: pointer;
 }
+
+#card #remove{
+    background-color: lightcoral;
+}

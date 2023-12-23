@@ -1,20 +1,16 @@
 let isStatus=document.querySelector('h5')
-let btn=document.querySelector('#add')
+let add=document.querySelector('#add')
+let remove=document.querySelector('#remove')
 
-let check=0
 
-btn.addEventListener('click',()=>{
-    if(check==0)
-    {
+    add.addEventListener('click',()=>{
         isStatus.style.color='green';
         isStatus.innerHTML='Friend'
-        check=1;
-    }
-    else
-    {
+    
+    })    
+    remove.addEventListener('click',()=>{
+        
         isStatus.style.color='red';
         isStatus.innerHTML='Stranger'
-        check=0;
-    }
-    
+        
 })
