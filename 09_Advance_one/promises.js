@@ -124,3 +124,19 @@ fetch('https://jsonplaceholder.typicode.com/users')
 }).catch((err)=>{
     console.log(err);
 })
+
+
+// Async simply allows us to write promises-based code as if it was synchronous and 
+// it checks that we are not breaking the execution thread.
+// Async functions will always return a value. It makes sure that a promise is returned 
+// and if it is not returned then JavaScript automatically wraps it in a promise which is resolved 
+// with its value.
+
+// Await function is used to wait for the promise. It could be used within the async block only.
+// It makes the code wait until the promise returns a result.
+
+// The async keyword transforms a regular JavaScript function into an asynchronous function, 
+// causing it to return a Promise.
+
+// The await keyword is used inside an async function to pause its execution and wait 
+// for a Promise to resolve before continuing.
