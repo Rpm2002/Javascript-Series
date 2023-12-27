@@ -10,7 +10,7 @@ class User{
 
 class Teacher extends User{
     constructor(username,email,pwd){
-        super(username);
+        super(username); // The super keyword is used to access properties on an object literal or class's [[Prototype]], or invoke a superclass's constructor.
         this.email=email;
         this.pwd=pwd
     }
